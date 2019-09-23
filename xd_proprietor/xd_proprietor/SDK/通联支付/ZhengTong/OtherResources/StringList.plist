@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AccountNotNull</key>
+	<string>机构账号和机构代码均不能为空</string>
+	<key>FP_Title</key>
+	<string>开始</string>
+	<key>CI_Title</key>
+	<string>拍摄证件照片</string>
+	<key>CI_Attention</key>
+	<string>请确保证件完整拍摄、无污损、无光斑</string>
+	<key>CI_BearCardImage</key>
+	<string>身份证背面照</string>
+	<key>CI_FrontCardImage</key>
+	<string>身份证正面照</string>
+	<key>CI_IDValidateVerify</key>
+	<string>请确保您的二代身份证处于有效期内</string>
+	<key>CropI_Title</key>
+	<string>核实证件照片</string>
+	<key>Error_LowImageQuality</key>
+	<string>图片质量不满足请求, 请重新选择照片/拍照</string>
+	<key>Error_IDImageLoss</key>
+	<string>请上传身份证正反面照片</string>
+	<key>Error_ResultQueryTimeOut</key>
+	<string>操作结果查询超时, 请重试</string>
+	<key>Error_GetKey</key>
+	<string>会话密钥获取失败</string>
+	<key>Error_URLType</key>
+	<string>URL类型匹配失败</string>
+	<key>Error_OCRService</key>
+	<string>OCR服务访问失败</string>
+	<key>Error_FaceCompare</key>
+	<string>人脸对比操作失败</string>
+	<key>BV_Title</key>
+	<string>视频认证</string>
+	<key>BV_Tips1</key>
+	<string>请根据提示完成视频信息采集。                   </string>
+	<key>BV_Tips2</key>
+	<string>为保证视频认证质量，请确保：                   </string>
+	<key>FV_Title</key>
+	<string>自助视频认证</string>
+	<key>FV_KEY</key>
+	<string>AAKKLBG</string>
+	<key>FV_FaceCamera</key>
+	<string>提示动作前请正对摄像头</string>
+	<key>FV_OpenMouth</key>
+	<string>请张嘴</string>
+	<key>FV_ShakeHead</key>
+	<string>请左右摇头</string>
+	<key>FV_NodHead</key>
+	<string>请仰头</string>
+	<key>VIDD_Title</key>
+	<string>核对身份信息</string>
+	<key>VR_Title</key>
+	<string>认证成功</string>
+	<key>VR_Title_fail</key>
+	<string>认证失败</string>
+	<key>VR_Title_Live_F</key>
+	<string>活体失败</string>
+	<key>VE_Title_result</key>
+	<string>认证完成</string>
+	<key>NetAccessFailed</key>
+	<string>网络不可用, 请稍候再试</string>
+	<key>VE_ID_result</key>
+	<string>身份证件图像认证</string>
+</dict>
+</plist>

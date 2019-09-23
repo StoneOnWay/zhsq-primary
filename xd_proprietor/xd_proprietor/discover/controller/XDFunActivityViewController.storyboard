@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="TKq-7Q-z4C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fun Activity View Controller-->
+        <scene sceneID="ZTU-Mp-ODZ">
+            <objects>
+                <viewController id="TKq-7Q-z4C" customClass="XDFunActivityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k7A-Rj-bcp"/>
+                        <viewControllerLayoutGuide type="bottom" id="tRj-lx-Lhx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cOb-So-n25">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbS-wT-B1E">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                                <connections>
+                                    <segue destination="mTE-cL-Fo1" kind="embed" id="URm-cZ-fo4"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-N1-T7F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XXB-Qw-hWm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VFh-N1-T7F" firstAttribute="top" secondItem="cOb-So-n25" secondAttribute="top" id="0Wl-9i-UjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="VFh-N1-T7F" secondAttribute="trailing" id="CQG-db-ljo"/>
+                            <constraint firstAttribute="trailing" secondItem="xbS-wT-B1E" secondAttribute="trailing" id="HME-3e-98w"/>
+                            <constraint firstItem="VFh-N1-T7F" firstAttribute="leading" secondItem="cOb-So-n25" secondAttribute="leading" id="Hud-5T-hg6"/>
+                            <constraint firstAttribute="bottom" secondItem="xbS-wT-B1E" secondAttribute="bottom" id="RCd-xI-vFK"/>
+                            <constraint firstItem="xbS-wT-B1E" firstAttribute="leading" secondItem="cOb-So-n25" secondAttribute="leading" id="lKx-kh-bUs"/>
+                            <constraint firstItem="xbS-wT-B1E" firstAttribute="top" secondItem="cOb-So-n25" secondAttribute="top" constant="40" id="xnP-OO-ihF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentdControlContainView" destination="VFh-N1-T7F" id="KW1-z2-vtq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUT-3g-xaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.5" y="70.5"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="g9o-bG-mxl">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="mTE-cL-Fo1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03v-r2-Ieh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="71"/>
+        </scene>
+    </scenes>
+</document>

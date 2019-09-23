@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XDAddMyCarsFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YX-BP-5gg">
+                    <rect key="frame" x="15" y="42" width="345" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Fzw-Ss-5lH"/>
+                    </constraints>
+                    <state key="normal" title="提交" backgroundImage="baoxiu_btn_tijiao">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="commitBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="68s-WY-qMF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2YX-BP-5gg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8Td-VM-AP6"/>
+                <constraint firstItem="2YX-BP-5gg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="a60-Cp-GwU"/>
+                <constraint firstAttribute="trailing" secondItem="2YX-BP-5gg" secondAttribute="trailing" constant="15" id="ogu-S5-BOf"/>
+                <constraint firstItem="2YX-BP-5gg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="v6B-Vp-Sgd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ensureBtn" destination="2YX-BP-5gg" id="aYl-YP-DdY"/>
+            </connections>
+            <point key="canvasLocation" x="-104" y="39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baoxiu_btn_tijiao" width="345" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDMyOrderAddressController">
+            <connections>
+                <outlet property="addressTextView" destination="ikU-Qq-uUb" id="Q9l-IU-3uc"/>
+                <outlet property="editBtn" destination="DmK-gd-TNZ" id="v2S-wo-TVd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ikU-Qq-uUb">
+                    <rect key="frame" x="67.5" y="80" width="240" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="nus-WQ-Uno"/>
+                        <constraint firstAttribute="height" constant="80" id="p6i-4g-gjO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmK-gd-TNZ">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.81568627449999997" green="0.68627450980000004" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5hc-EE-9hC"/>
+                    </constraints>
+                    <state key="normal" title="修改地址">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickEditBtn:" destination="-1" eventType="touchUpInside" id="gN0-ik-tQR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRd-Dy-xfO">
+                    <rect key="frame" x="67.5" y="42" width="76.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ikU-Qq-uUb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="18V-JA-g3y"/>
+                <constraint firstItem="ikU-Qq-uUb" firstAttribute="leading" secondItem="gRd-Dy-xfO" secondAttribute="leading" id="T8t-mG-1kX"/>
+                <constraint firstAttribute="trailing" secondItem="DmK-gd-TNZ" secondAttribute="trailing" id="VM7-DO-mMu"/>
+                <constraint firstItem="DmK-gd-TNZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VqB-Xk-e42"/>
+                <constraint firstAttribute="bottom" secondItem="DmK-gd-TNZ" secondAttribute="bottom" id="XcC-Ek-g5u"/>
+                <constraint firstItem="ikU-Qq-uUb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="lSv-xA-enE"/>
+                <constraint firstItem="ikU-Qq-uUb" firstAttribute="top" secondItem="gRd-Dy-xfO" secondAttribute="bottom" constant="20" id="ugR-gy-MC7"/>
+            </constraints>
+            <point key="canvasLocation" x="-18" y="32"/>
+        </view>
+    </objects>
+</document>

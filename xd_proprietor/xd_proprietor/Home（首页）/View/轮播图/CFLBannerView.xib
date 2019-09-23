@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CFLBannerView" id="k5K-qN-kTz" customClass="CFLBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nH-jt-Vb3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="delegate" destination="k5K-qN-kTz" id="ktc-fd-E04"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="84U-mS-uZH">
+                    <rect key="frame" x="0.0" y="130" width="375" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="yMJ-lY-OhH"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="0.039215686270000001" green="0.6705882353" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="84U-mS-uZH" firstAttribute="bottom" secondItem="2nH-jt-Vb3" secondAttribute="bottom" id="27X-ns-sWe"/>
+                <constraint firstItem="2nH-jt-Vb3" firstAttribute="top" secondItem="k5K-qN-kTz" secondAttribute="top" id="3bz-N6-UQc"/>
+                <constraint firstItem="84U-mS-uZH" firstAttribute="leading" secondItem="k5K-qN-kTz" secondAttribute="leading" id="KxE-zC-yuS"/>
+                <constraint firstAttribute="bottom" secondItem="2nH-jt-Vb3" secondAttribute="bottom" id="PNE-fy-S34"/>
+                <constraint firstAttribute="trailing" secondItem="84U-mS-uZH" secondAttribute="trailing" id="fLQ-eT-VSZ"/>
+                <constraint firstItem="2nH-jt-Vb3" firstAttribute="leading" secondItem="k5K-qN-kTz" secondAttribute="leading" id="jec-57-05m"/>
+                <constraint firstAttribute="trailing" secondItem="2nH-jt-Vb3" secondAttribute="trailing" id="q7l-jW-88r"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerPageController" destination="84U-mS-uZH" id="6aC-Jq-0d2"/>
+                <outlet property="bannerScrollView" destination="2nH-jt-Vb3" id="QWj-J7-4fS"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="42"/>
+        </view>
+    </objects>
+</document>

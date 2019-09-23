@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="XDHomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg_bai" translatesAutoresizingMaskIntoConstraints="NO" id="xbA-HF-4Ts">
+                        <rect key="frame" x="10" y="5" width="300" height="169.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="八方二期B区交房抽奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2A-DW-cB8">
+                        <rect key="frame" x="25" y="13" width="275" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BGY-oE-rlX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_pic_little" translatesAutoresizingMaskIntoConstraints="NO" id="Yv7-0k-FGO">
+                        <rect key="frame" x="25" y="37" width="270" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="3c1-tF-e5g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本次活动时间截止2017年7月31日18：00 ，活动最终解释权归先导物业八方分公司。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gw-fo-gVm">
+                        <rect key="frame" x="25" y="127" width="270" height="34.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xbA-HF-4Ts" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0BN-z0-KGv"/>
+                    <constraint firstAttribute="bottom" secondItem="2Gw-fo-gVm" secondAttribute="bottom" constant="18" id="6OW-kG-POx"/>
+                    <constraint firstItem="xbA-HF-4Ts" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ln2-SE-35n"/>
+                    <constraint firstAttribute="trailing" secondItem="Yv7-0k-FGO" secondAttribute="trailing" constant="25" id="Mzh-LM-Qsi"/>
+                    <constraint firstAttribute="bottom" secondItem="xbA-HF-4Ts" secondAttribute="bottom" constant="5" id="NHj-CH-8KM"/>
+                    <constraint firstAttribute="trailing" secondItem="2Gw-fo-gVm" secondAttribute="trailing" constant="25" id="Nc5-rT-DTQ"/>
+                    <constraint firstItem="K2A-DW-cB8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="QvR-JK-vUl"/>
+                    <constraint firstItem="2Gw-fo-gVm" firstAttribute="top" secondItem="Yv7-0k-FGO" secondAttribute="bottom" constant="10" id="WMA-Gc-dRX"/>
+                    <constraint firstAttribute="trailing" secondItem="xbA-HF-4Ts" secondAttribute="trailing" constant="10" id="Wyn-2K-J07"/>
+                    <constraint firstAttribute="trailing" secondItem="K2A-DW-cB8" secondAttribute="trailing" constant="20" id="bVm-ZP-Vpz"/>
+                    <constraint firstItem="Yv7-0k-FGO" firstAttribute="top" secondItem="K2A-DW-cB8" secondAttribute="bottom" constant="3" id="h0m-ae-qrj"/>
+                    <constraint firstItem="Yv7-0k-FGO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="psn-C7-oiA"/>
+                    <constraint firstItem="K2A-DW-cB8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="qHf-bo-NcB"/>
+                    <constraint firstItem="2Gw-fo-gVm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="xto-VZ-jIv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabels" destination="2Gw-fo-gVm" id="Wnx-Dm-CD7"/>
+                <outlet property="iconImage" destination="Yv7-0k-FGO" id="rNn-dn-J97"/>
+                <outlet property="titleLablels" destination="K2A-DW-cB8" id="MEc-X9-N0v"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_bg_bai" width="356" height="197"/>
+        <image name="home_pic_little" width="316" height="92"/>
+    </resources>
+</document>

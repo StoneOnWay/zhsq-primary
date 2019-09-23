@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qHa-Pt-x9V" customClass="XDMyCarsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qHa-Pt-x9V" id="haQ-t6-Aze">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="布加迪威龙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cth-ys-DO1">
+                        <rect key="frame" x="33" y="11" width="76.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bTP-6b-R7U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湘A  88888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFl-pm-sJl">
+                        <rect key="frame" x="194" y="12" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Wta-Bv-8lK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YE-kq-Agn">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9f7-WI-DvT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cth-ys-DO1" firstAttribute="centerY" secondItem="haQ-t6-Aze" secondAttribute="centerY" id="68h-bv-X38"/>
+                    <constraint firstItem="9YE-kq-Agn" firstAttribute="leading" secondItem="haQ-t6-Aze" secondAttribute="leading" id="8bR-zw-MXH"/>
+                    <constraint firstItem="bFl-pm-sJl" firstAttribute="centerY" secondItem="haQ-t6-Aze" secondAttribute="centerY" id="D1k-cR-Od4"/>
+                    <constraint firstAttribute="trailing" secondItem="9YE-kq-Agn" secondAttribute="trailing" id="G6o-Z7-ezD"/>
+                    <constraint firstItem="cth-ys-DO1" firstAttribute="leading" secondItem="haQ-t6-Aze" secondAttribute="leading" constant="33" id="GrI-oQ-jiF"/>
+                    <constraint firstAttribute="trailing" secondItem="bFl-pm-sJl" secondAttribute="trailing" constant="46" id="HBn-R5-oKa"/>
+                    <constraint firstAttribute="bottom" secondItem="9YE-kq-Agn" secondAttribute="bottom" id="VjG-ma-5Jc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carName" destination="cth-ys-DO1" id="f0K-cA-ND9"/>
+                <outlet property="carNumber" destination="bFl-pm-sJl" id="Ob7-3j-qA7"/>
+                <outlet property="linView" destination="9YE-kq-Agn" id="YzY-Hn-VUB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

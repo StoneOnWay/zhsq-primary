@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="XDMyDetailOrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewh-fD-czD">
+                        <rect key="frame" x="15" y="10" width="37.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cEo-5N-7qu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCh-cg-igc">
+                        <rect key="frame" x="15" y="40" width="37.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="luA-QN-jWL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czr-g6-CP3">
+                        <rect key="frame" x="15" y="70" width="37.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gXd-tE-3ba"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjj-f2-zan">
+                        <rect key="frame" x="62.5" y="10.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISO-KH-GCg">
+                        <rect key="frame" x="62.5" y="41" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-ca-uwx">
+                        <rect key="frame" x="62.5" y="71" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cjj-f2-zan" firstAttribute="leading" secondItem="ewh-fD-czD" secondAttribute="trailing" constant="10" id="0qp-by-LG2"/>
+                    <constraint firstItem="Czr-g6-CP3" firstAttribute="top" secondItem="cCh-cg-igc" secondAttribute="bottom" constant="10" id="3l0-H9-w3g"/>
+                    <constraint firstItem="cjj-f2-zan" firstAttribute="centerY" secondItem="ewh-fD-czD" secondAttribute="centerY" id="6Yx-5y-yui"/>
+                    <constraint firstItem="Czr-g6-CP3" firstAttribute="leading" secondItem="ewh-fD-czD" secondAttribute="leading" id="8eY-nD-gpu"/>
+                    <constraint firstItem="ewh-fD-czD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KNa-xW-mbB"/>
+                    <constraint firstItem="RRB-ca-uwx" firstAttribute="leading" secondItem="cjj-f2-zan" secondAttribute="leading" id="N0k-Zb-tTV"/>
+                    <constraint firstItem="cCh-cg-igc" firstAttribute="leading" secondItem="ewh-fD-czD" secondAttribute="leading" id="P9I-hv-h2y"/>
+                    <constraint firstItem="ewh-fD-czD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bCN-hS-Aip"/>
+                    <constraint firstItem="ISO-KH-GCg" firstAttribute="centerY" secondItem="cCh-cg-igc" secondAttribute="centerY" id="bsI-gx-wNF"/>
+                    <constraint firstItem="ISO-KH-GCg" firstAttribute="leading" secondItem="cjj-f2-zan" secondAttribute="leading" id="i0S-bW-ZIJ"/>
+                    <constraint firstItem="RRB-ca-uwx" firstAttribute="centerY" secondItem="Czr-g6-CP3" secondAttribute="centerY" id="nSa-qR-YKg"/>
+                    <constraint firstItem="cCh-cg-igc" firstAttribute="top" secondItem="ewh-fD-czD" secondAttribute="bottom" constant="10" id="y8r-gL-t2f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectLabel" destination="Czr-g6-CP3" id="CLd-Xn-jDB"/>
+                <outlet property="detailCollect" destination="RRB-ca-uwx" id="OCh-b4-g8d"/>
+                <outlet property="detailNum" destination="cjj-f2-zan" id="igF-tf-0Rv"/>
+                <outlet property="detailTime" destination="ISO-KH-GCg" id="kp1-t4-E49"/>
+                <outlet property="numLabel" destination="ewh-fD-czD" id="5Gc-yE-JCj"/>
+                <outlet property="payTime" destination="cCh-cg-igc" id="Skt-qa-tHr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

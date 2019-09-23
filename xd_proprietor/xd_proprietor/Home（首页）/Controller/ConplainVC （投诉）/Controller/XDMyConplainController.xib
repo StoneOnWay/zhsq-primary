@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XDMyConplainController">
+            <connections>
+                <outlet property="contentLab" destination="LOw-PA-gEB" id="4qq-XG-do9"/>
+                <outlet property="levelBackView" destination="bqC-BU-Jzy" id="9YW-8D-0gB"/>
+                <outlet property="levelLab" destination="8dI-WX-0NJ" id="ikc-Oz-UF7"/>
+                <outlet property="upDateLab" destination="RVU-j5-KTs" id="6fc-BQ-oOc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="紧急程度:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-qn-0W9">
+                    <rect key="frame" x="20" y="25" width="75" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="fSy-1L-DXe"/>
+                        <constraint firstAttribute="height" constant="21" id="kOM-0v-Bzw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqC-BU-Jzy">
+                    <rect key="frame" x="103" y="18.5" width="252" height="34"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFZ-kE-xlp">
+                            <rect key="frame" x="0.0" y="0.0" width="252" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="levelBtn:" destination="-1" eventType="touchUpInside" id="SXy-ex-1Ce"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tousu_btn_down" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-WN-4As">
+                            <rect key="frame" x="219" y="0.5" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="Wgm-MH-DBF"/>
+                                <constraint firstAttribute="height" constant="33" id="Z9Q-G2-Cyt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择紧急情况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dI-WX-0NJ">
+                            <rect key="frame" x="10" y="0.0" width="209" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.99215686270000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KFZ-kE-xlp" firstAttribute="top" secondItem="bqC-BU-Jzy" secondAttribute="top" id="3QW-2W-HhQ"/>
+                        <constraint firstItem="8dI-WX-0NJ" firstAttribute="leading" secondItem="bqC-BU-Jzy" secondAttribute="leading" constant="10" id="BEJ-If-SO9"/>
+                        <constraint firstAttribute="bottom" secondItem="KFZ-kE-xlp" secondAttribute="bottom" id="GDI-cn-3ce"/>
+                        <constraint firstItem="Anu-WN-4As" firstAttribute="centerY" secondItem="bqC-BU-Jzy" secondAttribute="centerY" id="Gzd-gY-Slt"/>
+                        <constraint firstItem="KFZ-kE-xlp" firstAttribute="leading" secondItem="bqC-BU-Jzy" secondAttribute="leading" id="SEh-d7-Nei"/>
+                        <constraint firstItem="8dI-WX-0NJ" firstAttribute="top" secondItem="bqC-BU-Jzy" secondAttribute="top" id="iiH-42-sv1"/>
+                        <constraint firstAttribute="trailing" secondItem="Anu-WN-4As" secondAttribute="trailing" id="rOe-gx-DJY"/>
+                        <constraint firstAttribute="bottom" secondItem="8dI-WX-0NJ" secondAttribute="bottom" id="trb-7M-OeP"/>
+                        <constraint firstAttribute="height" constant="34" id="vxM-zn-y1L"/>
+                        <constraint firstAttribute="trailing" secondItem="KFZ-kE-xlp" secondAttribute="trailing" id="yt6-Jc-iCk"/>
+                        <constraint firstItem="Anu-WN-4As" firstAttribute="leading" secondItem="8dI-WX-0NJ" secondAttribute="trailing" id="yvF-Hh-SU0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投诉内容:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOw-PA-gEB">
+                    <rect key="frame" x="20" y="76" width="75" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="IXg-Us-qIx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传照片:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-j5-KTs">
+                    <rect key="frame" x="20" y="222" width="75" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="RFs-dc-JdK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LOw-PA-gEB" firstAttribute="trailing" secondItem="Ygl-qn-0W9" secondAttribute="trailing" id="67n-yP-P2L"/>
+                <constraint firstItem="Ygl-qn-0W9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Aq4-hL-m9B"/>
+                <constraint firstItem="bqC-BU-Jzy" firstAttribute="centerY" secondItem="Ygl-qn-0W9" secondAttribute="centerY" id="C7J-A8-ZTr"/>
+                <constraint firstItem="LOw-PA-gEB" firstAttribute="leading" secondItem="Ygl-qn-0W9" secondAttribute="leading" id="FLg-33-1DU"/>
+                <constraint firstAttribute="trailing" secondItem="bqC-BU-Jzy" secondAttribute="trailing" constant="20" id="G8z-fk-ceq"/>
+                <constraint firstItem="RVU-j5-KTs" firstAttribute="trailing" secondItem="Ygl-qn-0W9" secondAttribute="trailing" id="Rz4-dc-ZQR"/>
+                <constraint firstItem="RVU-j5-KTs" firstAttribute="leading" secondItem="Ygl-qn-0W9" secondAttribute="leading" id="Sgx-EJ-IFm"/>
+                <constraint firstItem="bqC-BU-Jzy" firstAttribute="leading" secondItem="Ygl-qn-0W9" secondAttribute="trailing" constant="8" id="izd-KT-6wX"/>
+                <constraint firstItem="LOw-PA-gEB" firstAttribute="top" secondItem="Ygl-qn-0W9" secondAttribute="bottom" constant="30" id="uqF-Y1-ahE"/>
+                <constraint firstItem="RVU-j5-KTs" firstAttribute="top" secondItem="LOw-PA-gEB" secondAttribute="bottom" constant="125" id="w6l-s3-yju"/>
+                <constraint firstItem="Ygl-qn-0W9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="wNC-iv-ZzP"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tousu_btn_down" width="22" height="22"/>
+    </resources>
+</document>

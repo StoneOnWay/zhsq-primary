@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SET-SH-gCa" customClass="XDCreateOrderFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-NV-wVv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUn-P6-GBR">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="eUn-P6-GBR" secondAttribute="bottom" id="BJK-iU-012"/>
+                        <constraint firstAttribute="trailing" secondItem="eUn-P6-GBR" secondAttribute="trailing" id="DH8-4j-UUH"/>
+                        <constraint firstItem="eUn-P6-GBR" firstAttribute="top" secondItem="w6n-NV-wVv" secondAttribute="top" id="VeL-lZ-CRa"/>
+                        <constraint firstItem="eUn-P6-GBR" firstAttribute="leading" secondItem="w6n-NV-wVv" secondAttribute="leading" id="YhJ-Vx-5ka"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q08-tI-DF8">
+                    <rect key="frame" x="277.5" y="15" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8Ly-An-ib3"/>
+                        <constraint firstAttribute="height" constant="21" id="xTg-3D-sPM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ev5-f4-i2G">
+                    <rect key="frame" x="327.5" y="16" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ev5-f4-i2G" firstAttribute="leading" secondItem="q08-tI-DF8" secondAttribute="trailing" id="ASX-qu-AyM"/>
+                <constraint firstAttribute="trailing" secondItem="w6n-NV-wVv" secondAttribute="trailing" id="Ivj-h1-Ld8"/>
+                <constraint firstItem="q08-tI-DF8" firstAttribute="centerY" secondItem="SET-SH-gCa" secondAttribute="centerY" id="ReT-mB-CRS"/>
+                <constraint firstAttribute="trailing" secondItem="ev5-f4-i2G" secondAttribute="trailing" constant="10" id="SNs-Bn-Dev"/>
+                <constraint firstAttribute="bottom" secondItem="w6n-NV-wVv" secondAttribute="bottom" id="Srp-IQ-sxc"/>
+                <constraint firstItem="w6n-NV-wVv" firstAttribute="top" secondItem="SET-SH-gCa" secondAttribute="top" id="j06-tN-XeJ"/>
+                <constraint firstItem="ev5-f4-i2G" firstAttribute="centerY" secondItem="SET-SH-gCa" secondAttribute="centerY" id="p4H-aQ-CYT"/>
+                <constraint firstItem="w6n-NV-wVv" firstAttribute="leading" secondItem="SET-SH-gCa" secondAttribute="leading" id="v71-rf-G6l"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLabels" destination="ev5-f4-i2G" id="9pk-b2-Zyx"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="84"/>
+        </view>
+    </objects>
+</document>
